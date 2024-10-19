@@ -44,9 +44,10 @@ Open your terminal and run the following command to clone the repository:
 ```bash
 git clone https://github.com/AyushV14/Budget-app.git
 cd budget-app
+npx expo start
 ```
 
-npx expo start
+
 
 4. Open the App
    You can now open the app using the Expo Go app on your mobile device:
