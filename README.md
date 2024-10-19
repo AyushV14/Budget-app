@@ -49,7 +49,7 @@ npx expo start
 
 
 
-4. Open the App
+### 2. Open the App
    You can now open the app using the Expo Go app on your mobile device:
 
 Scan the QR code displayed in the terminal or in your web browser after running the start command.
