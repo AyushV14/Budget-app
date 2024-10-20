@@ -6,7 +6,7 @@ import { Image, StyleSheet } from 'react-native';
 import LoadingScreen from './pages/LoadingScreen';
 import GetStartedScreen from './pages/GetStartedScreen';
 import HomeScreen from './pages/home/HomeScreen';
-import StatsScreen from './pages/StatsScreen';
+import StatsScreen from './pages/stats/StatsScreen';
 import WalletScreen from './pages/WalletScreen';
 import ProfileScreen from './pages/ProfileScreen';
 
