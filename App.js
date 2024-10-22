@@ -9,6 +9,7 @@ import HomeScreen from './pages/home/HomeScreen';
 import StatsScreen from './pages/stats/StatsScreen';
 import WalletScreen from './pages/WalletScreen';
 import ProfileScreen from './pages/ProfileScreen';
+import AddPayment from './pages/home/Addpayment'; // Import AddPayment
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -20,6 +21,7 @@ const App = () => {
         <Stack.Screen name="Loading" component={LoadingScreen} />
         <Stack.Screen name="GetStarted" component={GetStartedScreen} />
         <Stack.Screen name="Main" component={MainTabs} />
+        <Stack.Screen name="AddPayment" component={AddPayment} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -53,7 +55,6 @@ const MainTabs = () => {
           return <Image source={iconSource} style={styles.icon} />;
         },
         tabBarShowLabel: false,
-
         tabBarStyle: styles.tabBar,
       })}
     >

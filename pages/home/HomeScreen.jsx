@@ -8,7 +8,7 @@ const transactions = [
   { id: '4', name: 'Youtube', amount: '- ₹11.99', icon: require('./../../assets/img/home/youtube.png'), date: 'Jan 16, 2024' },
 ];
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Background image */}
@@ -95,7 +95,10 @@ const HomeScreen = () => {
         </View>
 
         {/* Add Plus Button */}
-        <TouchableOpacity style={styles.plusButton}>
+        <TouchableOpacity 
+          style={styles.plusButton} 
+          onPress={() => navigation.navigate('AddPayment')} // Navigation to AddPayment
+        >
           <Text style={styles.plusButtonText}>+</Text>
         </TouchableOpacity>
       </View>
@@ -145,8 +148,6 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
   },
-
-  // Updated balance section
   balanceSection: {
     backgroundColor: '#2F7E79',
     borderRadius: 10,
@@ -253,19 +254,19 @@ const styles = StyleSheet.create({
   },
   plusButton: {
     position: 'absolute',
-    bottom: 30, // Adjust based on your layout
-    right: 170, // Adjust based on your layout
+    bottom: 30,
+    right: 170,
     width: 60,
     height: 60,
-    borderRadius: 30, // Make it circular
+    borderRadius: 30,
     backgroundColor: '#438883',
     alignItems: 'center',
     justifyContent: 'center',
-    elevation: 5, // Optional: add shadow effect on Android
+    elevation: 5,
   },
   plusButtonText: {
     color: '#fff',
-    fontSize: 30, // Adjust the size of the + symbol
+    fontSize: 30,
     fontWeight: 'bold',
   },
 });
